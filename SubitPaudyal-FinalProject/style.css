@@ -1,0 +1,631 @@
+* {
+    font-family: 'Alkatra', cursive;
+}
+
+body {
+    background-image: linear-gradient(rgba(184, 180, 180, 0.5),
+            rgba(235, 229, 229, 0.1)),
+        url("images/flower-background-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: solid 2px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    /*background-color:#ace5f7;*/
+    width: auto;
+}
+
+header {
+    background-image: linear-gradient(rgba(204, 199, 199, 0.1),
+            rgba(90, 86, 86, 0.9)),
+        url("images/mount-background-image-for-\ mainpage..jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 34px;
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    text-align: left;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin-top: 0;
+}
+
+fieldset {
+    margin: 15px 10px;
+    width: auto;
+}
+
+legend {
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+nav {
+    float: right;
+    padding: 16px;
+}
+
+nav ul {
+    background: #49c9f0;
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 100%;
+}
+
+nav li {
+    padding: 10px 0;
+    text-align: center;
+    width: 90%;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: solid;
+}
+
+nav:hover ul {
+    display: block;
+}
+
+#menu-icon {
+    background: url("images/menu-icon.png") center;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+
+
+/*Classes*/
+.top-of-the-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.top-of-the-page img {
+    width: 60%;
+}
+
+.left-logo {
+    text-align: left;
+}
+
+.right-logo {
+    text-align: right;
+}
+
+.center-logo {
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+.nav-pages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.logo-and-name h3 {
+    margin-top: 0;
+}
+
+.second-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.second-section img {
+    display: block;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100px;
+}
+
+.home-page,
+.menu-page main,
+.drinks-page main {
+    margin: 0;
+}
+
+
+
+
+
+/*menu and drinks page*/
+
+.menu-page h2,
+.menu-page p,
+.drinks-page h2,
+.drinks-page p {
+    text-align: center;
+}
+
+.menu-page h2,
+.drinks-page h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.menu-page p,
+.drinks-page p {
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.apps,
+.salads,
+.mains,
+.sides,
+.desserts,
+.alcohol,
+.non-alcohol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+.apps img,
+.salads img,
+.mains img,
+.sides img,
+.desserts img,
+.alcohol img,
+.non-alcohol img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.apps img,
+.salads img,
+.mains img,
+.desserts img,
+.alcohol img,
+.non-alcohol img {
+    height: 100px;
+    width: 100px;
+}
+
+.sides img {
+    height: 75px;
+    width: 100px;
+}
+
+#cocacola img {
+    height: 100px;
+    width: 75px;
+}
+
+
+
+
+
+/*Reservation and Contaact Us Page*/
+/*Attributes*/
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="time"] {
+    border: 1px solid #99F443;
+    color: #000;
+    display: block;
+    font-weight: 600;
+    height: 25px;
+    margin-top: 5px;
+    width: 99%;
+}
+
+input[type="date"] {
+    border-color: #99F443;
+    border-style: solid;
+    font-weight: 600;
+    margin: 5px 0 10px;
+    width: 99%;
+}
+
+input[type="submit"] {
+    border: 2px solid #99F443;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+input[type="submit"]:hover {
+    background: #99F443;
+    border: 2px #317773;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #FFE77AFF;
+    border: none;
+}
+
+input,
+textarea {
+    margin: 5px 0 10px;
+}
+
+textarea {
+    border-color: #99F443;
+    font-weight: 600;
+    height: 150px;
+    width: 99%;
+}
+
+button {
+    border: 2px solid #E2D1F9;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: 'Alkatra', cursive;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 30px;
+}
+
+/*Placehoder styling*/
+::placeholder {
+    color: #317773;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.bottom-images {
+    display: none;
+}
+
+.form-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+
+.message {
+    width: 100%;
+}
+
+.button-me {
+    text-align: center;
+}
+
+.hours h2 {
+    font-size: 20px;
+}
+
+.hours p,
+.address p {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+
+/*Google Maps on the contact us page*/
+.google-map {
+    position: relative;
+}
+
+.google-map iframe {
+    height: 250px;
+    width: 100%;
+}
+
+footer p {
+    font-size: 12px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 100px 20px;
+    }
+
+    legend {
+        font-size: 24px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    nav ul {
+        background: transparent;
+        display: inline-block;
+        top: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav li {
+        display: inline-block;
+        padding: 10px;
+        width: 20%;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+
+    header h1 {
+        font-size: 38px;
+        margin-top: 40px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .home-page h2 {
+        font-size: 28px;
+    }
+
+    .home-page p,
+    .homepage h3 {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+
+    .top-of-the-page img {
+        display: none;
+    }
+
+    .second-section img {
+        height: 200px;
+        width: 200px;
+    }
+
+    /*Menu page*/
+
+    .menu-page h2,
+    .drinks-page h2 {
+        font-size: 20px;
+    }
+
+    .menu-page p,
+    .drinks-page p {
+        font-size: 16px;
+    }
+
+    .apps,
+    .salads,
+    .mains,
+    .sides,
+    .desserts,
+    .alcohol,
+    .non-alcohol {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .apps img,
+    .salads img,
+    .mains img,
+    .desserts img,
+    .alcohol img,
+    .non-alcohol img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .sides img {
+        height: 150px;
+        width: 200px;
+    }
+
+    #cocacola img {
+        height: 200px;
+        width: 150px;
+    }
+
+
+    /*resevation and contact page*/
+
+    textarea {
+        height: 125px;
+    }
+
+    .form-column {
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bottom-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .left-logo {
+        text-align: left;
+    }
+
+    .right-logo {
+        text-align: right;
+    }
+
+    .left-logo img,
+    .right-logo img {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    nav ul {
+        width: 75%;
+    }
+
+    nav a {
+        font-size: 24px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header h3 {
+        font-size: 26px;
+    }
+
+    .home-page h2 {
+        font-size: 30px;
+    }
+
+    .home-page p {
+        font-size: 22px;
+    }
+
+    .home-page main,
+    .menu-page main,
+    .drinks-page main {
+        margin: auto;
+        gap: 30px;
+        width: 75%;
+    }
+
+
+    /*home-page*/
+    .second-section img {
+        height: 250px;
+        width: 250px;
+    }
+
+    /*Menu page*/
+
+    .menu-page h2,
+    .drinks-page h2 {
+        font-size: 24px;
+    }
+
+    .menu-page p,
+    .drinks-page p {
+        font-size: 18px;
+    }
+
+    .apps,
+    .salads,
+    .mains,
+    .sides,
+    .desserts,
+    .alcohol,
+    .non-alcohol {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .alcohol img,
+    .non-alcohol img {
+        height: 150px;
+        width: 150px;
+    }
+
+    #cocacola img {
+        height: 150px;
+        width: 100px;
+    }
+
+    legend {
+        font-size: 26px;
+    }
+
+    .form-column {
+        gap: 25px;
+    }
+
+    .forms {
+        margin: auto;
+        width: 75%;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="time"] {
+        height: 35px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    header h1 {
+        font-size: 48px;
+    }
+
+    header h3 {
+        font-size: 30px;
+    }
+
+    .home-page h2 {
+        font-size: 34px;
+    }
+
+    .home-page p {
+        font-size: 26px;
+    }
+
+    .home-page main,
+    .menu-page main,
+    .drinks-page main,
+    .forms {
+        width: 65%;
+    }
+}

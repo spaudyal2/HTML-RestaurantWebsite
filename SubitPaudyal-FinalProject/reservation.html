@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Assignment 4- Final Project</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body id="reservation-page">
+    <header class="background-img">
+        <div class="top-of-the-page">
+            <div class=" left-logo">
+                <img src="images/buddha-logo.png" alt="a picture of buddha">
+            </div>
+            <div class="center-logo">
+                <a href="index.html"><img src="images/just-logo.png" alt="logo of the restaurant"></a>
+            </div>
+            <div class="right-logo">
+                <img src="images/buddha-logo.png" alt="a picture of buddha">
+            </div>
+        </div>
+        <nav>
+            <a href="#" id="menu-icon"></a>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="drinks.html">DRINKS</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="forms">
+        <form>
+            <h1>Reservation</h1>
+            <fieldset>
+                <div class="form-column">
+                    <div>
+                        <label for="fName">*First Name</label>
+                        <input id="fName" name="fName" placeholder="FirstName" type="text" required>
+                    </div>
+
+                    <div>
+                        <label for="lName">*Last Name</label>
+                        <input id="lName" name="lName" placeholder="LastName" type="text" required>
+                    </div>
+
+                    <div>
+                        <label for="telephone">*Telephone</label>
+                        <input id="telephone" name="telephone" placeholder="647-890-1234" type="tel"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+
+                    <div>
+                        <label for="email">*Email</label>
+                        <input id="email" name="email" placeholder="bookmeatable@gmail.com" type="email" required>
+                    </div>
+
+                    <div>
+                        <label for="guestNum">*No of Guest</label>
+                        <input id="guestNum" name="guestNum" placeholder="1 -10" type="number" min="1" max="10"
+                            required>
+                    </div>
+
+                    <div>
+                        <label for="reservationDate">*Reservation Date</label>
+                        <input id="reservationDate" name="reservationDate" type="date" required>
+                    </div>
+
+                    <div>
+                        <label for="time">*Time</label>
+                        <input id="time" name="time" type="time" value="11:00" min="11:00" max="21:00" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="button-me">
+                <input type="submit" value="Book Table">
+            </div>
+        </form>
+
+    </main>
+
+    <div class="bottom-images">
+        <div class=" left-logo">
+            <img src="images/buddha-logo.png" alt="a picture of buddha">
+        </div>
+
+        <div class="right-logo">
+            <img src="images/buddha-logo.png" alt="a picture of buddha">
+        </div>
+    </div>
+    <hr>
+
+    <footer>
+        <small>WEBD1102 2023 - Subit Paudyal- Final Project</small>
+    </footer>
+
+</body>
+
+</html>
